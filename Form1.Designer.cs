@@ -37,10 +37,12 @@
             // openFileDialog1
             // 
             openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.FileOk += openFileDialog1_FileOk_1;
             // 
             // openFileDialog2
             // 
             openFileDialog2.FileName = "openFileDialog2";
+            openFileDialog2.FileOk += openFileDialog2_FileOk_1;
             // 
             // button1
             // 
@@ -71,6 +73,7 @@
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 
